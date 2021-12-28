@@ -1,28 +1,38 @@
 import { Table } from "react-bootstrap";
-import { IPerson } from "../../interfaces";
+import { IPerson, ITableColumn } from "../../interfaces";
 import { getFullName } from "../../utils/utils";
+
+const TableColumn: React.FC<ITableColumn> = ({ children, isRightAligned }) => {
+    const className = `border-0 ${isRightAligned ? 'text-end' : undefined}`;
+
+    return (
+        <td className={className}>
+            {children}
+        </td>
+    );
+}
 
 export const ComponentsPersonDetailsTable: React.FC<IPerson> = ({ email, name }) => {
     const fullName = getFullName(name);
 
     return (
-        <Table bordered>
+        <Table>
             <tbody>
                 <tr>
-                    <td>
+                    <TableColumn isRightAligned>
                         Name:
-                    </td>
-                    <td>
+                    </TableColumn>
+                    <TableColumn>
                         {fullName}
-                    </td>
+                    </TableColumn>
                 </tr>
                 <tr>
-                    <td>
+                    <TableColumn isRightAligned>
                         Email:
-                    </td>
-                    <td>
+                    </TableColumn>
+                    <TableColumn>
                         {email}
-                    </td>
+                    </TableColumn>
                 </tr>
             </tbody>
         </Table>

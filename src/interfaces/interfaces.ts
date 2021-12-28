@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface IName {
     first: string,
     last: string,
@@ -7,4 +9,8 @@ export interface IName {
 export interface IPerson {
     email: string,
     name: IName
+}
+
+export interface ITableColumn {
+    isRightAligned?: boolean
 }

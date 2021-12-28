@@ -1,1 +1,1 @@
-export { IName, IPerson } from './interfaces';
+export { IName, IPerson, ITableColumn } from './interfaces';

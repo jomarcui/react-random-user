@@ -4,6 +4,7 @@ import { getRandomData } from "../../api/api.service";
 import { RANDOM_USER_URL } from "../../constants/constants";
 import { IPerson } from "../../interfaces";
 import { ComponentsPersonDetailsTable } from "./DetailsTable";
+import styled from "styled-components";
 
 const useComponentsPersonCard = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -30,23 +31,28 @@ const useComponentsPersonCard = () => {
     return { isLoading, person, buttonHandleClick };
 }
 
+const CardStyled = styled(Card)`
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    min-height: 203px;
+`;
+
 export const ComponentsPersonCard: React.FC = () => {
     const { isLoading, person, buttonHandleClick } = useComponentsPersonCard();
 
     return (
-        <Card>
-            <Card.Body>
+        <CardStyled>
+            <Card.Body className="d-flex flex-column">
                 <div className="align-items-center d-flex justify-content-between">
-                    <h5>
+                    <h5 className="m-0">
                         Random Person Details
                     </h5>
                     <div>
                         <Button disabled={isLoading} onClick={buttonHandleClick}>Refresh</Button>
                     </div>
                 </div>
-                <div className="d-flex justify-content-center my-3">
+                <div className="align-items-center d-flex flex-fill justify-content-center">
                     {isLoading && (
-                        <Spinner animation="border" />
+                        <Spinner animation="border" variant="info" />
                     )}
 
                     {(!isLoading && !!person) && (
@@ -54,6 +60,6 @@ export const ComponentsPersonCard: React.FC = () => {
                     )}
                 </div>
             </Card.Body>
-        </Card>
+        </CardStyled>
     );
 }

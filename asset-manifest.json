@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jomarcui/react-random-user/static/css/main.f1768d48.css",
+    "main.js": "/jomarcui/react-random-user/static/js/main.7a39bd5b.js",
+    "static/js/787.5b43f7ed.chunk.js": "/jomarcui/react-random-user/static/js/787.5b43f7ed.chunk.js",
+    "index.html": "/jomarcui/react-random-user/index.html",
+    "main.f1768d48.css.map": "/jomarcui/react-random-user/static/css/main.f1768d48.css.map",
+    "main.7a39bd5b.js.map": "/jomarcui/react-random-user/static/js/main.7a39bd5b.js.map",
+    "787.5b43f7ed.chunk.js.map": "/jomarcui/react-random-user/static/js/787.5b43f7ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1768d48.css",
+    "static/js/main.7a39bd5b.js"
+  ]
+}

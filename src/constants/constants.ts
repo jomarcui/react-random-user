@@ -1,0 +1,1 @@
+export const RANDOM_USER_URL: string = 'https://randomuser.me/api';

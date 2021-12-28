@@ -24,3 +24,8 @@ In the project directory, you can run:
 Runs the app in the development mode.
 
 Open <a href="http://localhost:3000" rel="no-follow">http://localhost:3000</a> to view it in your browser.
+
+## Live
+
+Please visit this <a href="https://jomarcui.github.io/react-random-user/" target="_blank">link</a> to
+view the live demo

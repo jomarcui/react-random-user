@@ -1,8 +1,21 @@
 # React Random User
 
-This project is a simple application to test my skills in React and Typescript.
+This is an assignment from a potential employer.
 
 I used <em>axios</em> as a replacement for "fetch".
+
+Please note that I purposely did not use the following:
+
+<ul>
+  <li>
+    <em>async</em>/<em>await</em> - No need to await the retrieval of data from api, but the function is async
+  </li>
+  <li>
+    <em>local storage</em> - I feel like there is no need to store a single dynamic random person data in local storage
+  </li>
+</ul>
+ in this project as I feel there is no need
+to pause the async function
 
 ## Tech Used
 

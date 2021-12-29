@@ -14,8 +14,6 @@ Please note that I purposely did not use the following:
     <em>local storage</em> - I feel like there is no need to store a single dynamic random person data in local storage
   </li>
 </ul>
- in this project as I feel there is no need
-to pause the async function
 
 ## Tech Used
 
